@@ -1,12 +1,13 @@
 import React from "react";
-import "./App.css";
-//import {HelloWorldFunctional} from './Components/HelloWorld';
-import Counter from './Components/Counter';
+import "./index.css";
+import { HelloWorldFunctional } from "./Components/HelloWorld";
+import Header from "./Components/Header";
+//import Counter from './Components/Counter';
 function App() {
     return (
         <div>
-            {/*<HelloWorldFunctional name="Evan"/>*/}
-            <Counter />
+            <Header/>
+            <HelloWorldFunctional name="Evan" />
         </div>
     );
 }
