@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-
+import Loader from "../Components/Loader";
 function Product() {
     const { id } = useParams()
     let url = `https://5f206b5cfba6d400169d4f11.mockapi.io/api/v1/products/${id}`;
@@ -24,7 +24,7 @@ function Product() {
     }, [url]);
     let content = null;
     if(product.loading){
-        content = <p>loading...</p>
+        content = <Loader />
     }
     if (product.data) {
         content = (
