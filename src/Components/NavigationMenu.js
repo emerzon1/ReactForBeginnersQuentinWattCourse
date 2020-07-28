@@ -9,7 +9,7 @@ function NavigationMenu(props) {
                     <Link
                         onClick={props.closeMenu}
                         className="text-blue-500 py-3 border-t border-b block"
-                        to=".netlify.app/"
+                        to="/"
                     >
                         Home
                     </Link>
@@ -18,7 +18,7 @@ function NavigationMenu(props) {
                     <Link
                         onClick={props.closeMenu}
                         className="text-blue-500 py-3 border-b block"
-                        to=".netlify.app/about"
+                        to="/about"
                     >
                         About
                     </Link>
@@ -27,7 +27,7 @@ function NavigationMenu(props) {
                     <Link
                         onClick={props.closeMenu}
                         className="text-blue-500 py-3 border-b block"
-                        to=".netlify.app/contact"
+                        to="/contact"
                     >
                         Contact
                     </Link>
