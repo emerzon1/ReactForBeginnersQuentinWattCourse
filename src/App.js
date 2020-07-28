@@ -9,7 +9,7 @@ import Product from "./Views/Product";
 //import Counter from './Components/Counter';
 function App() {
     return (
-        <div>
+        <div className="relative pb-10">
             <Router>
                 <Header />
                 <div className="p-3">

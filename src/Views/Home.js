@@ -48,8 +48,8 @@ function Home() {
     if (products.data) {
         content = products.data.map((product, key) => {
             return (
-                <div>
-                    <ProductCard />
+                <div key={key}>
+                    <ProductCard product={product}/>
                 </div>
             );
         });
