@@ -1,39 +1,12 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import Loader from "../Components/Loader";
 import ProductCard from "../Components/ProductCard";
+import { useAxiosGet } from '../Hooks/HttpRequest';
 function Home() {
     let content = null;
 
     let url = `https://5f206b5cfba6d400169d4f11.mockapi.io/api/v1/products?page=1&limit=10`;
-    const [products, setProducts] = useState({
-        loading: false,
-        data: null,
-        error: false,
-    });
-    useEffect(() => {
-        setProducts({
-            loading: true,
-            data: null,
-            error: false,
-        });
-        axios
-            .get(url)
-            .then((response) => {
-                setProducts({
-                    loading: false,
-                    data: response.data,
-                    error: false,
-                });
-            })
-            .catch((error) => {
-                setProducts({
-                    loading: false,
-                    data: null,
-                    error: true,
-                });
-            });
-    }, [url]);
+    let products = useAxiosGet(url);
     if (products.loading) {
         content = <Loader />;
     }
