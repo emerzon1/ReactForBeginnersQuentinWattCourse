@@ -14,16 +14,16 @@ function App() {
                 <Header />
                 <div className="p-3">
                     <Switch>
-                        <Route exact path="/">
+                        <Route exact path=".netlify.app/">
                             <Home />
                         </Route>
-                        <Route exact path="/about">
+                        <Route exact path=".netlify.app/about">
                             <About />
                         </Route>
-                        <Route exact path="/contact">
+                        <Route exact path=".netlify.app/contact">
                             <Contact />
                         </Route>
-                        <Route exact path="/products/:id">
+                        <Route exact path=".netlify.app/products/:id">
                             <Product />
                         </Route>
                     </Switch>
