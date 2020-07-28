@@ -9,7 +9,7 @@ import Product from "./Views/Product";
 //import Counter from './Components/Counter';
 function App() {
     return (
-        <div className="relative pb-10">
+        <div className="relative pb-10 min-h-screen">
             <Router>
                 <Header />
                 <div className="p-3">
