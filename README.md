@@ -5,6 +5,7 @@ The site can be found life at [Netlify](https://react-template-emerzon.netlify.a
 You can also clone this project and run `npm i` to install dependencies, `npm start` to run in dev mode, and `npm run build` to build for production.
 
 <details><summary>Other available scripts</summary>
+  
 ## Available Scripts
 
 In the project directory, you can run:
