@@ -1,5 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<details>This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).</details>
 
+The site can be found life at [Netlify](https://react-template-emerzon.netlify.app)
+
+You can also clone this project and run `npm i` to install dependencies, `npm start` to run in dev mode, and `npm run build` to build for production.
+
+<details><summary>Other available scripts</summary>
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,3 +71,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+</details>
