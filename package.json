@@ -2,6 +2,7 @@
   "name": "react-for-beginners",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://emerzon1.github.io/MomBday",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
@@ -26,7 +27,9 @@
     "start": "npm run build:css && react-scripts start",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
