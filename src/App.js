@@ -3,9 +3,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Views/Home";
-import About from "./Views/About";
-import Contact from "./Views/Contact";
-import Product from "./Views/Product";
+import Card from "./Views/Card";
 //import Counter from './Components/Counter';
 function App() {
     return (
@@ -17,14 +15,8 @@ function App() {
                         <Route exact path="/">
                             <Home />
                         </Route>
-                        <Route exact path="/about">
-                            <About />
-                        </Route>
-                        <Route exact path="/contact">
-                            <Contact />
-                        </Route>
-                        <Route exact path="/products/:id">
-                            <Product />
+                        <Route exact path="/card">
+                            <Card />
                         </Route>
                     </Switch>
                 </div>

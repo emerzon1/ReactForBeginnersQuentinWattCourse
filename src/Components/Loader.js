@@ -1,10 +1,16 @@
-import React from 'react';
-
-function Loader(){
+import React from "react";
+import Loader from "react-loader-spinner";
+function Loaders() {
     return (
-        <div className="flex justify-center">
-            <div className="loader"></div>
-        </div>
+        <center>
+            <Loader
+                type="Hearts"
+                color="#ff6ec7"
+                height={300}
+                width={300}
+                timeout={4000}
+            />
+        </center>
     );
 }
-export default Loader;
+export default Loaders;

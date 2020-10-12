@@ -1,36 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Loader from "../Components/Loader";
-import ProductCard from "../Components/ProductCard";
-import { useAxiosGet } from '../Hooks/HttpRequest';
+import BirthdayAnimation from "../Components/BirthdayAnimation"
+let timeStarted;
 function Home() {
-    let content = null;
+    const [time, setTime] = useState(Date.now());
 
-    let url = `https://5f206b5cfba6d400169d4f11.mockapi.io/api/v1/products?page=1&limit=10`;
-    let products = useAxiosGet(url);
-    if (products.loading) {
-        content = <Loader />;
-    }
-    if (products.error) {
-        content = (
-            <p>
-                There was an error accessing the resource. Please refresh or try
-                again later
-            </p>
-        );
-    }
-    if (products.data) {
-        content = products.data.map((product, key) => {
-            return (
-                <div key={key}>
-                    <ProductCard product={product}/>
-                </div>
-            );
-        });
+    useEffect(() => {
+        timeStarted = Date.now()
+        const interval = setInterval(() => setTime(Date.now()), 1000);
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
+    
+    if(time - timeStarted < 3000 || !timeStarted){
+        return <Loader />
     }
     return (
         <div>
-            <h1 className="font-bold text-2xl">Best Sellers</h1>
-            {content}
+            <h1 style={{ textAlign: "center" }} className="font-bold text-2xl">
+                Happy 45<sup>th</sup> Birthday!
+            </h1>
+            <BirthdayAnimation />
         </div>
     );
 }
