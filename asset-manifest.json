@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MomBday/static/css/main.42c1e69d.chunk.css",
+    "main.js": "/MomBday/static/js/main.85ee4918.chunk.js",
+    "main.js.map": "/MomBday/static/js/main.85ee4918.chunk.js.map",
+    "runtime-main.js": "/MomBday/static/js/runtime-main.0061392e.js",
+    "runtime-main.js.map": "/MomBday/static/js/runtime-main.0061392e.js.map",
+    "static/js/2.d1d731e5.chunk.js": "/MomBday/static/js/2.d1d731e5.chunk.js",
+    "static/js/2.d1d731e5.chunk.js.map": "/MomBday/static/js/2.d1d731e5.chunk.js.map",
+    "index.html": "/MomBday/index.html",
+    "precache-manifest.3b3fcb4bf674c1653d7aa864af61d247.js": "/MomBday/precache-manifest.3b3fcb4bf674c1653d7aa864af61d247.js",
+    "service-worker.js": "/MomBday/service-worker.js",
+    "static/css/main.42c1e69d.chunk.css.map": "/MomBday/static/css/main.42c1e69d.chunk.css.map",
+    "static/js/2.d1d731e5.chunk.js.LICENSE.txt": "/MomBday/static/js/2.d1d731e5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0061392e.js",
+    "static/js/2.d1d731e5.chunk.js",
+    "static/css/main.42c1e69d.chunk.css",
+    "static/js/main.85ee4918.chunk.js"
+  ]
+}
